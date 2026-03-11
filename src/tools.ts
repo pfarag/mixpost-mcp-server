@@ -78,7 +78,7 @@ export const MIXPOST_TOOLS: Tool[] = [
                 type: 'object',
                 properties: {
                   body: { type: 'string' },
-                  media: { type: 'array' },
+                  media: { type: 'array', items: { type: 'string' } },
                   urls: { type: 'array', items: { type: 'string' } }
                 }
               },
@@ -135,7 +135,7 @@ export const MIXPOST_TOOLS: Tool[] = [
                 type: 'object',
                 properties: {
                   body: { type: 'string' },
-                  media: { type: 'array' },
+                  media: { type: 'array', items: { type: 'string' } },
                   urls: { type: 'array', items: { type: 'string' } }
                 }
               },
